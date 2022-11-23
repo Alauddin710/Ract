@@ -1,0 +1,6 @@
+20/11/2022
+map = 
+variables = var ,const, let. akane var redeclare ba re assasing kora jai, let ka sudo reassign kora jai, kintu const ke redeclare ba reassign kora jai na
+
+22/11/2022
+21 projecter modde 22 tariker kiso project ase 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance</title>
+  </head>
+  <body>
+    <script>
+      class Car {
+        constructor(name, color) {
+          this.n = name;
+          this.col = color;
+        }
+        child() {
+          return "This my car Name: " + this.n + " Color Name: " + this.col;
+        }
+      }
+      class Model extends Car {
+        constructor(year, price) {
+          super("Motor", "balck");
+          this.year = year;
+          this.price = price;
+        }
+      }
+      const Modelobj = new Model("2022", "50000");
+      console.log(Modelobj);
+      document.write(Modelobj.child());
+      //   const choice = new Car("Xcorola", "Red");
+      //   document.write(choice.n);
+      //   document.write("<br>");
+      //   document.write(choice.col);
+      //   document.write("<br>");
+      //   document.write(choice.child());
+      //   const modelobj = new Model("motors");
+      //   console.log(modelobj);
+    </script>
+  </body>
+</html>

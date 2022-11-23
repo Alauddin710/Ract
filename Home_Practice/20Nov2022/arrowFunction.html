@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Fucntion</title>
+  </head>
+  <body>
+    <script>
+      function Hello() {
+        document.write("This is normal Function <br>");
+      }
+      Hello();
+
+      //Arrow Function
+      //   let Hello1 = name => {
+      //     document.write("This is a Arrow Fucntion Name: " + name);
+      //   };
+      //   Hello1("Arrow");
+
+      let hello = (name, address) => {
+        document.write(
+          "This is arrow function name : " +
+            name +
+            "This is Arrow function address: " +
+            address
+        );
+      };
+      hello("Arrow", "W3School");
+    </script>
+  </body>
+</html>

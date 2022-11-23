@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <script>
+      //   const team = ["Argentina", "Brazil", "France", "Katar", "Australia"];
+      //   const [a, b, c, d] = team;
+      //   document.write(a);
+    </script>
+
+    <script>
+      //destructuring Function
+      function Calc(x, y) {
+        const add = x + y + "<br>";
+        const subtract = x - y + "<br>";
+        const multiply = x * y + "<br>";
+        const divide = x / y + "<br>";
+        return [add, subtract, multiply, divide];
+      }
+      const [a, b, c, d] = Calc(15, 10);
+      document.write(a);
+      document.write(b);
+      document.write(c);
+      document.write(d);
+    </script>
+  </body>
+</html>
