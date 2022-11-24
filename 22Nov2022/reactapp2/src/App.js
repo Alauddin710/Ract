@@ -3,7 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Header/Header";
 import Navber from "./Navber/Navber";
 import Sidebar from "./Sidebar/Sidebar";
-import Home from "./pages/Home";
+
+import { Outlet } from "react-router-dom";
+
 function App() {
   return (
     <>
@@ -15,7 +17,7 @@ function App() {
       <div className="container mt-5">
         <div className="row">
           <Sidebar />
-          <Home />
+          <Outlet />
         </div>
       </div>
     </>

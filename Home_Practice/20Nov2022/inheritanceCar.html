@@ -8,21 +8,46 @@
   </head>
   <body>
     <script>
+      // class Car {
+      //   constructor(name, address) {
+      //     this.n = name;
+      //     this.ad = address;
+      //   }
+      //   present() {
+      //     return "My name is: " + this.n + " My address: " + this.ad;
+      //   }
+      // }
+      // const obj = new Car("Alo", "Dighol Kandi");
+      // document.write(obj.n);
+      // document.write("<br>");
+      // document.write(obj.ad);
+      // document.write("<br>");
+      // document.write(obj.present());
+    </script>
+
+    <script>
       class Car {
-        constructor(name, address) {
-          this.n = name;
-          this.ad = address;
+        constructor(name, color) {
+          this.name = name;
+          this.color = color;
         }
-        present() {
-          return "My name is: " + this.n + " My address: " + this.ad;
+        saySomething() {
+          console.log(this.name);
         }
       }
-      const obj = new Car("Alo", "Dighol Kandi");
-      document.write(obj.n);
-      document.write("<br>");
-      document.write(obj.ad);
-      document.write("<br>");
-      document.write(obj.present());
+      class Vehicle extends Car {
+        constructor(numwhel, pass, color) {
+          super(name, color);
+          this.whel = numwhel;
+        }
+      }
+      let output = new Car(4, 6, "red");
+      let output1 = new Car("alauddin", "Black");
+      console.log(output);
+
+      // console.log(output);
+      // console.log(output1);
+      // output.saySomething();
     </script>
   </body>
 </html>
